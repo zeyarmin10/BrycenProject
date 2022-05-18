@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <script src="calculator.js"></script>
+</body>
+    
+    <div class="calculator">
+        <h1>CASIO</h1>
+        <div class="input-area">
+            <div class="history"><button class="btn-history" onclick="histLog()"><i class="fa-solid fa-clock-rotate-left"></i></button>
+            </div>
+
+            <div class="show-hide-history" id="show-hide-history" >
+                <div class="btn-histroy-box">
+                    <div class="btn-trash" onclick="clearHist()">
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+        
+                    <div class="btn-close" onclick="closeHistLog()">
+                        <button>CLOSE</button>
+                    </div>    
+                </div>
+                <h4>History</h4>
+                <div class="history-log-box">
+                    <ul id="allhistroy" ></ul>
+                </div>
+                
+            </div>
+            <input type="text" class="display" id="display" value="">
+            <button class="delete-left" onclick="Dele()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="numpad-container">
+            <div class="grid-area">
+                <button class="numpad grid-area1" value="1" OnClick="AddNum(1)">
+                    1
+                </button>            
+            </div>
+            <div class="grid-area">
+                <button class="numpad grid-area2" value="2" OnClick="AddNum('2')">
+                    2
+                </button>
+            </div>
+            <div class="grid-area ">
+                <button class="numpad grid-area3" value="3" OnClick="AddNum('3')">
+                    3
+                </button>
+            </div>
+            <div class="grid-area">
+                <button class="grid-area-div" value="/" OnClick="AddNum('/')">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+            </div>
+            <div class="grid-area ">
+                <button class="grid-area4" value="4" OnClick="AddNum('4')">
+                    4
+                </button>
+            </div>
+            <div class="grid-area grid-area5" value="5" OnClick="AddNum('5')">
+                <button class="grid-area5">
+                    5
+                </button>
+            </div>
+            <div class="grid-area ">
+                <button class="grid-area6" value="6" OnClick="AddNum('6')">
+                    6
+                </button>
+            </div>
+            <div class="grid-area grid-area-multi">
+                <button class='grid-area-multi' value="*" OnClick="AddNum('*')">
+                    <label for="multiplication"><i class="fa-solid fa-xmark"></i></label>
+                </button>
+            </div>
+            <div class="grid-area grid-area-7">
+                <button OnClick="AddNum('7')">
+                    7
+                </button>
+            </div>
+            <div class="grid-area grid-area-8">
+                <button OnClick="AddNum('8')">
+                    8
+                </button>
+            </div>
+            <div class="grid-area grid-area-9">
+                <button OnClick="AddNum('9')">
+                    9
+                </button>
+            </div>
+            <div class="grid-area grid-area-minus">
+                <button OnClick="AddNum('-')">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+            </div>
+            <div class="grid-area grid-area-d-0">
+                <button OnClick="Clear()">
+                    AC 
+                </button>
+            </div>
+            <div class="grid-area grid-area-0">
+                <button OnClick="AddNum('0')">
+                    0
+                </button>
+            </div>
+            <div class="grid-area grid-area-plus">
+                <button OnClick="AddNum('+')">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="grid-area grid-area-equal">
+                <button value="=" onclick="calc()">
+                    <i class="fa-solid fa-equals"></i>
+                </button>
+            </div>
+        </div>    
+    </div>
+</html>

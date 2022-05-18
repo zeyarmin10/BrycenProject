@@ -1,0 +1,188 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    let delete_single_num = document.querySelector('#delete_single_num');
+    let total =document.getElementById('total');
+    let log =document.querySelector('#log');
+    let Normal_btn = document.querySelectorAll('#Normal_btn');
+    let result = document.querySelector('#result');
+    let clear = document.querySelector('#clear');
+        let history = document.querySelector('#history');
+        // let history2 = document.querySelector('#history2');
+        let equalTo = document.querySelector('#equalTo');
+    
+        let initial_value = "";
+        let click=document.getElementById('click');
+        log.addEventListener('click',function(){
+            total.innerHTML += "<ul><li>"+"<a href='#' id='click'>"+history.innerHTML+" "+result.innerHTML+"</li></ul><br>";
+        })
+        // click.addEventListener('click',function(){
+        //     result.innerHTML= result.innerHTML;
+        // })
+    Normal_btn.forEach((Normal_btn, index)=>{
+        Normal_btn.addEventListener('click', function(){
+        let text = this.innerHTML;
+        initial_value += text;
+        result.innerHTML = initial_value;
+        });
+        });
+        delete_single_num.addEventListener('click', function(){
+            result.innerHTML = result.innerHTML.substring(0,result.innerHTML.length-1);
+            initial_value = result.innerHTML;
+            });
+        equalTo.addEventListener('click', function(){
+            if (result.innerHTML != "") {
+            history.innerHTML += " "+result.innerHTML+" = ";
+            result.innerHTML = eval(result.innerHTML);
+            initial_value = eval(result.innerHTML);
+        }
+            // }else if(result.innerHTML ==history.innerHTML){
+            //     history.innerHTML=result.innerHTML;
+            //     history2.innerHTML=history.innerHTML;
+            // }
+            else{
+                alert('please enter any Number');
+            }
+            });
+        clear.addEventListener('click', function(){
+                result.innerHTML = "";
+                initial_value = "";
+                history.innerHTML="";
+                });
+});
+// function display(value) {
+//     document.getElementById("calc").value += value;
+// }
+
+
+// function calculate() {
+   
+   
+//     // document.getElementById('calc').value=a;
+//     let equalTo = document.querySelector('#bequal');
+//     let history = document.querySelector('#history');
+//     let result = document.querySelector('#result');
+//     equalTo.addEventListener('click',function(){
+//         let initial_value = "";
+//         if (result.innerHTML != "") {
+//             history.innerHTML = result.innerHTML;
+//             result.innerHTML = eval(result.innerHTML);
+//             initial_value = eval(result.innerHTML);
+//             }else{
+//             alert('please enter any Number');
+//             }
+//     })
+//     var p = document.getElementById("calc").value;
+//     var q = eval(p);
+//     document.getElementById("calc").value = q;
+//     // var a=che();
+   
+   
+// }
+
+// function Clear(){
+//     document.getElementById('calc').value="";
+// }
+// var total = 0;
+// var opr = "";
+// var num2 =0;
+// var num1 = 0;
+// var str ="";
+
+
+// function Clearbtn(){
+//    num1=0;
+//    num2=0;
+//    total=0;
+//     document.getElementById("calc").value="";
+// }
+
+
+// function result(){
+//     if(opr == '+'){
+//         total = parseInt(num1)+parseInt(num2);
+//         console.log("total",total)
+//     }else if(opr == "-"){
+//         total = parseInt(num1)-parseInt(num2);
+//         console.log("total",total)
+//     }else if(opr == "/"){
+//         total = parseInt(num1)/parseInt(num2);
+//         console.log("total",total)
+//     }else if(opr == "*"){
+//         total = parseInt(num1)*parseInt(num2);
+//         console.log("total",total)
+//     }
+//     num1 = total ; 
+//     num2 = 0; 
+//     document.getElementById("calc").value = total;
+//     opr = "";
+// }
+
+// function numberAdd(num){
+
+//     console.log(num);
+
+//     if(opr == "" && num1 == 0){
+//         num1 = '' + num;
+//         console.log("num1",num1);
+//         str = ''+num1;
+//         document.getElementById("calc").value += str;
+//     }else if(opr == "" && num1 !=0){
+//         num1 = ''+num1+num;
+//         console.log("num1",num1);
+//         str = ''+num1;
+//         document.getElementById("calc").value = str;
+//     }else if(opr !="" && num2 == 0){
+//         num2 = ''+num;
+//         str = ''+num2;
+//         document.getElementById("calc").value += str;
+//         console.log("num2",num2)
+//     }else if(opr !="" && num2 !=0){
+//         console.log("num2 mmm",num2)
+//         num2 = ''+num1+num;
+//         console.log("num2",num2);
+//         str = ''+num2;
+//         document.getElementById("calc").value += str;
+//     } else if(opr != "" && num1 != 0){
+//         num2 = num;
+//     } else if(opr == "" && num1 != 0){
+//         num1 += ''+num;
+//     }
+
+//     // console.log("final num1",num1);
+//     // console.log("final num2",num2);
+    
+// }
+
+// function operator(optest){
+//     // console.log(optest)
+//     opr = optest;
+//     // console.log(opr);
+//     // str = ''+opr;
+//     document.getElementById("calc").value +=opr ;
+// }
+
+// function che(){
+//     var res = [];
+//     var answer;
+    
+//     if(document.getElementById("calc").value.includes("+")){
+//     res = document.getElementById("calc").value.split('+');
+//     return parseInt(res[0]) + parseInt(res[1]);
+//     }
+    
+//     else if(document.getElementById("calc").value.includes("-")){
+//     res = document.getElementById("calc").value.split('-');
+//     return parseInt(res[0]) - parseInt(res[1]);
+//     }
+    
+//     else if(document.getElementById("calc").value.includes("/")){
+//     res = document.getElementById("calc").value.split('/');
+//     return parseInt(res[0]) / parseInt(res[1]);
+//     }
+    
+//     else{
+//     res = document.getElementById("calc").value.split('*');
+//     return answer= parseInt(res[0]) * parseInt(res[1]);
+//     }
+    
+// }
+

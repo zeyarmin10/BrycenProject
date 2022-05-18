@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/pexels-andreea-ch-1166644.jpg);
+    background-size: cover;
+}
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    color: White;
+}
+.calculator {
+    width: 21rem;
+    margin: 2rem auto;
+    background-color: rgb(92, 91, 91);
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.history {
+    position: relative;
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: -3.5rem;
+    opacity: 0.4;
+}
+
+.history button {
+    background-color: #5C5B5B !important;
+}
+.btn-history {
+    margin-top: 1rem;
+    width: 2.5rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    border: none;
+}
+h4 {
+    text-align: center;
+    border-bottom: 1 solid #33383E;
+}
+.show-hide-history {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: whitesmoke;
+    width: 20.5rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+}
+
+.history-log-box {
+    width: 18rem;
+    overflow: auto;
+    max-height: 14rem;
+}
+
+#allhistory {
+    font-size: 2rem;
+}
+.btn-histroy-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.btn-close {
+    width: 4rem;
+}
+.btn-close button {
+    color: #5C5B5B;
+    background-color: whitesmoke ;
+    border: none;
+
+}
+
+.btn-close button:hover {
+    cursor: pointer;
+    color: green;
+    background-color: whitesmoke;
+}
+.btn-trash {
+    width: 1.5rem;
+    text-align: center;
+}
+.btn-trash button {
+    border: none;
+}
+.btn-trash button:hover {
+    background-color: whitesmoke    ;
+    color: red;
+}
+
+.input-area {
+    width: 22rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    margin-left: 0.2rem;
+}
+.input-area input{
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: #33383E;
+    color: white;
+    border-radius: 0.5rem;
+}
+.delete-left {
+    display: inline;
+    position: absolute;
+    height: 2rem;
+    border: none;
+    background-color: #33383E;
+    margin-left: -2.9rem;
+    margin-top: 1.2rem;
+    font-size: x-large;
+    border-radius: 0.4rem;
+    color: rgb(189, 187, 187);
+}
+.numpad-container {
+    margin: 0.5rem 0.15rem;
+    width: 21rem;
+    display: flex;
+    flex-grow: 4;
+    flex-shrink: 4;
+    flex-wrap: wrap;
+    /* grid-gap: 10px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 'input input input input'
+                         'one two numpad numpad'
+                         'numpad numpad numpad numpad'
+                         'numpad numpad numpad numpad'
+                         'numpad numpad numpad numpad';
+    background-color: grey; */
+}
+.grid-area  {
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+.grid-area button {
+    width: 5rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    border: none;
+    background-color: #33383E;
+    cursor: pointer;
+    color: whitesmoke;
+}

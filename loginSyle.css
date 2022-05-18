@@ -1,0 +1,83 @@
+/* .header-text {
+    width: 50%;
+    margin: 0 auto;
+} */
+body {
+    background-image: url("images/pexels-miguel-á-padriñán-19670.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navbar-nav {
+    padding: 0;
+}
+.home-tab {
+    padding: 1em;
+}
+.collapse {
+    padding-left: 2rem;
+}
+.container {
+    
+}
+h1 {
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+h1 {
+    text-align: center;
+}
+/* ul li input {
+    padding: 0.5rem;
+    width: 60%;
+} */
+/* img {
+    width: 30px;
+    height: 30px;
+} */
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+.form-floating {
+    margin: 2rem auto;
+}
+.remember {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.d-grid {
+    padding-top: 1rem;
+}
+
+    footer {
+        clear: both;
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 3rem;
+    }
+    .icon-area{
+        width: 100%;
+        padding: 1rem;
+    }
+    .footer-icon {
+        font-size: 1.8rem;
+        width: 3%;
+        height: 3%;
+        line-height: 2rem;
+    }
+@media (max-width:576px){
+    .form {
+        width: 90%;
+    }
+    .footer-icon {
+        font-size: 1.8rem;
+        width: 10%;
+        height: 3%;
+        line-height: 2rem;
+    }    
+}

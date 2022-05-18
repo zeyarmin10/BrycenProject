@@ -1,0 +1,17 @@
+body {
+    margin: 0 auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+}
+h2 {
+    color: green;
+    text-align: center;
+}
+h3 {
+    color: blue;
+    text-align: center;
+}

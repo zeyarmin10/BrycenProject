@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+h1,h2 {
+    padding-top: 2rem;
+    text-align: center;
+}
+.table {
+  width: 90.5% !important;
+  margin: 0 auto;
+  padding: 2rem;
+}
+th, td {
+border: 1px solid grey !important;
+text-align: center !important; 
+vertical-align: middle !important;
+}
+th {
+    color: red;
+}
+td {
+    color: blue;
+}
+.row {
+  padding-top: 2rem !important;
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+footer {
+    /* clear: both; */
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    background-color: black;
+    color: whitesmoke;
+}
+.footer-design {
+    margin: 0;
+    padding: 5rem auto;
+    line-height: 2.5rem;
+}
+
+.icon-area {
+    width: 100%;
+    padding: 1rem;
+}
+.footer-icon {
+    font-size: 1.8rem;
+    width: 3%;
+    height: 3%;
+    line-height: 2rem;
+}
+
+@media (max-width:576px){
+    .table {
+        width: 97% !important;
+        padding: 0;
+    }
+    .footer-icon {
+        font-size: 1.8rem;
+        width: 10%;
+        height: 5%;
+        line-height: 2rem;
+    }    
+
+}

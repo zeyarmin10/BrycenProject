@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Board</title>
+    <style>
+        .container {
+            width: 25%;
+            margin: 0 auto;
+            background-color: blanchedalmond;
+        }
+        get1, get2, get3 {
+            padding: 2rem;
+            border: 1px solid orange;
+            margin: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="get1"></div>
+        <div class="get2"></div>
+        <div class="get3"></div>
+    </div>
+    <script>
+        let firstname = localStorage.getItem('firstname');
+        let lastname = localStorage.getItem('lastname');
+        let email = localStorage.getItem('email');
+
+        document.querySelector('.get1').innerHTML = firstname;
+        document.querySelector('.get2').innerHTML = lastname;
+        document.querySelector('.get3').innerHTML = email;
+    </script>
+</body>
+</html>

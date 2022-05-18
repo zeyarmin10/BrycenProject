@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <p id="testing"></p>
+            <p id="test2"></p>
+            <p id="test3"></p>
+            <p id="test4"></p>
+            <script>
+                var fName = localStorage.getItem("firstname");
+                var lastName = localStorage.getItem("lastname");
+                var email =    localStorage.getItem("email");
+                var psw   =    localStorage.getItem("psw");
+                document.getElementById("testing").innerHTML = fName;
+                document.getElementById("test2").innerHTML = lastName;
+                document.getElementById("test3").innerHTML = email;
+                document.getElementById("test4").innerHTML = psw;
+
+                // localStorage.removeItem("firstname");
+                // localStorage.clear();
+            </script>
+        </body>
+    </head>
+</html>

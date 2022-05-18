@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Roboto Slab', serif;
+}
+img {
+    text-align: center;
+    width: 40%;
+    border-radius: 50%;
+}
+.header-section {
+    color: white;
+    float: left;
+    padding: 3rem;
+    background-color: #040B14;
+    width: 25%;
+    height: 100%;
+}
+.btn-back {
+    padding: 4rem auto !important;
+    width: 30% !important;
+    margin-bottom: 3rem;
+}
+.back-btn {
+    border: none;
+    background-color: #040B14;
+    color: whitesmoke;
+}
+.icon-pad {
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 1.8rem;
+}
+
+aside {
+    padding: 3rem 0;
+}
+aside ul {
+    padding: 0;
+}
+aside ul li {
+    list-style: none;
+    padding-left: o;
+}
+aside ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 0 ;
+}
+.icon-margin {
+}
+section {
+    position: relative;
+    float: right;
+    width: 75%;
+}
+
+.left-side {
+    background-image: url("Images/pexels-scott-webb-305821.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    /* clear: both; */
+    text-align: center;
+    /* background-color: rgb(238, 237, 237) 0.5; */
+    /* opacity: 0.5; */
+}
+
+
+@media (max-width: 576px) {
+    .header-section {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+}
